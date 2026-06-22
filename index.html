@@ -6,247 +6,83 @@
 <title>Nomad Capital Ventures</title>
 
 <style>
-:root{
-    --bg:#efe4cf;
-    --text:#26231f;
-    --muted:#5d554d;
-    --accent:#e89b77;
-}
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html,body{
+    height:100%;
 }
 
 body{
-    background:var(--bg);
-    color:var(--text);
+    overflow:hidden;
+    background:#000;
+    color:#fff;
     font-family:Georgia, "Times New Roman", serif;
-    min-height:100vh;
 }
 
-.container{
-    width:min(1100px,90%);
-    margin:0 auto;
+video{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
 }
 
-header{
-    padding:32px 0;
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:-1;
+}
+
+main{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
 }
 
 .logo{
-    font-size:.95rem;
-    text-transform:uppercase;
-    letter-spacing:.18em;
-}
-
-.hero{
-    min-height:78vh;
-    display:flex;
-    align-items:center;
-}
-
-.hero-content{
-    max-width:720px;
-}
-
-.eyebrow{
-    text-transform:uppercase;
-    letter-spacing:.22em;
-    font-size:.72rem;
-    color:var(--muted);
-    margin-bottom:18px;
-}
-
-h1{
+    text-align:center;
+    font-size:clamp(2rem,5vw,4.5rem);
     font-weight:400;
-    line-height:1.05;
-    font-size:clamp(2.25rem,5vw,4rem);
-    max-width:620px;
-    margin-bottom:32px;
-    letter-spacing:-0.04em;
-}
-
-.description{
-    font-family:Arial, Helvetica, sans-serif;
-    color:var(--muted);
-    font-size:1.05rem;
-    line-height:1.8;
-    max-width:560px;
-    margin-bottom:40px;
-}
-
-.button{
-    display:inline-block;
-    text-decoration:none;
-    background:var(--text);
-    color:var(--bg);
-    padding:15px 28px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.85rem;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    transition:.25s ease;
-}
-
-.button:hover{
-    background:transparent;
-    color:var(--text);
-    outline:1px solid var(--text);
-}
-
-.section{
-    padding:100px 0;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:40px;
-}
-
-.card{
-    border-top:2px solid var(--accent);
-    padding-top:18px;
-}
-
-.card-number{
-    color:var(--accent);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.8rem;
-    margin-bottom:12px;
-}
-
-.card h3{
-    font-weight:400;
-    font-size:1.45rem;
-    margin-bottom:14px;
-}
-
-.card p{
-    font-family:Arial, Helvetica, sans-serif;
-    color:var(--muted);
-    line-height:1.8;
+    letter-spacing:-0.05em;
+    text-shadow:0 2px 20px rgba(0,0,0,.4);
 }
 
 footer{
-    border-top:1px solid rgba(0,0,0,.08);
-    padding:40px 0;
-}
-
-.footer-text{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding:24px;
+    font-size:12px;
+    color:rgba(255,255,255,.7);
     font-family:Arial, Helvetica, sans-serif;
-    color:var(--muted);
-    font-size:.9rem;
-}
-
-@media (max-width:900px){
-
-    .hero{
-        min-height:auto;
-        padding:60px 0;
-    }
-
-    h1{
-        font-size:clamp(2rem,10vw,3.25rem);
-        max-width:100%;
-    }
-
-    .description{
-        font-size:1rem;
-    }
-
-    .grid{
-        grid-template-columns:1fr;
-        gap:50px;
-    }
-
-    .button{
-        width:100%;
-        text-align:center;
-    }
 }
 </style>
 </head>
-
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">Nomad Capital Ventures</div>
+<video autoplay muted loop playsinline>
+    <source src="https://twinfallscounty.org/wp-content/uploads/2018/11/4K-Drone-Footage-of-Perrine-Bridge-Shoshone-Waterfalls-Twin-Falls-Idaho.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<main>
+    <div class="logo">
+        Nomad Capital Ventures
     </div>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-
-            <div class="eyebrow">
-                Multi-Home Real Estate Investment
-            </div>
-
-            <h1>
-                Building long-term value<br>
-                through residential real estate.
-            </h1>
-
-            <p class="description">
-                Nomad Capital Ventures acquires, improves, and manages residential properties with a disciplined investment approach focused on sustainable growth, cash flow, and long-term value creation.
-            </p>
-
-            <a href="mailto:hello@nomadcapitalventures.com" class="button">
-                Start a Conversation
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-
-        <div class="grid">
-
-            <div class="card">
-                <div class="card-number">01</div>
-                <h3>Acquire</h3>
-                <p>
-                    We identify quality residential opportunities in growing markets with strong long-term fundamentals.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-number">02</div>
-                <h3>Improve</h3>
-                <p>
-                    Strategic renovations and thoughtful property management increase value while improving resident experience.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-number">03</div>
-                <h3>Grow</h3>
-                <p>
-                    Our portfolio is built around patient capital, stable returns, and disciplined expansion.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
+</main>
 
 <footer>
-    <div class="container">
-        <div class="footer-text">
-            © 2026 Nomad Capital Ventures
-        </div>
-    </div>
+    © 2026 Nomad Capital Ventures
 </footer>
 
 </body>
