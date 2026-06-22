@@ -1,1 +1,250 @@
-Nomad Capital Ventures
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nomad Capital Ventures</title>
+
+<style>
+
+:root{
+    --bg:#efe4cf;
+    --text:#26231f;
+    --muted:#5d554d;
+    --accent:#e89b77;
+    --accent-light:#f4c5b0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    min-height:100vh;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+header{
+    padding:30px 0;
+}
+
+.logo{
+    font-size:1rem;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    font-size:.75rem;
+    color:var(--muted);
+    margin-bottom:20px;
+}
+
+h1{
+    font-weight:400;
+    line-height:.95;
+    font-size:clamp(3.5rem,9vw,7rem);
+    margin-bottom:30px;
+}
+
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--muted);
+    font-size:1.15rem;
+    line-height:1.8;
+    max-width:650px;
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    color:var(--bg);
+    background:var(--text);
+    padding:16px 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.9rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    transition:.25s;
+}
+
+.button:hover{
+    background:transparent;
+    color:var(--text);
+    outline:1px solid var(--text);
+}
+
+.section{
+    padding:100px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.card{
+    border-top:2px solid var(--accent);
+    padding-top:20px;
+}
+
+.card-number{
+    color:var(--accent);
+    font-size:.85rem;
+    margin-bottom:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card h3{
+    font-weight:400;
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:var(--muted);
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+}
+
+footer{
+    padding:80px 0 40px;
+    border-top:1px solid rgba(0,0,0,.08);
+}
+
+.footer-text{
+    color:var(--muted);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.9rem;
+}
+
+@media (max-width:900px){
+
+    .hero{
+        min-height:65vh;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    h1{
+        font-size:clamp(3rem,14vw,5rem);
+    }
+
+    .description{
+        font-size:1rem;
+    }
+
+    .button{
+        width:100%;
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Nomad Capital Ventures</div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Multi-Home Real Estate Investment
+            </div>
+
+            <h1>
+                Building long-term value through residential real estate.
+            </h1>
+
+            <p class="description">
+                Nomad Capital Ventures acquires, improves, and manages residential properties with a disciplined investment approach focused on sustainable growth, cash flow, and long-term value creation.
+            </p>
+
+            <a href="#contact" class="button">
+                Start a Conversation
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="card-number">01</div>
+                <h3>Acquire</h3>
+                <p>
+                    We identify quality residential opportunities in growing markets with strong long-term fundamentals.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">02</div>
+                <h3>Improve</h3>
+                <p>
+                    Strategic renovations and thoughtful property management increase value while improving tenant experience.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">03</div>
+                <h3>Grow</h3>
+                <p>
+                    Our portfolio is built around patient capital, stable returns, and disciplined expansion.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <div class="footer-text">
+            Nomad Capital Ventures • Residential Real Estate Investment
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
